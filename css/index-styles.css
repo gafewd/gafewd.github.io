@@ -1,0 +1,23 @@
+@import url(../lib/font/news-706/news-706.css);
+@import url(../lib/font/pf-din/pf-din.css);
+
+body {
+	background: black;
+}
+
+h1 {
+	color: white;
+	font-family: 'PF Din'
+}
+
+.text-jumbo {
+	font-size: 500%;
+}
+
+.text-larger {
+	font-size: 200%;
+}
+
+.center-block {
+	margin: 0 auto;
+}
