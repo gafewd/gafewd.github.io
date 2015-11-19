@@ -2,7 +2,7 @@
 <html lang="en">
 
 	<head>
-		<title>FEWD - Class 5</title>
+		<title>FEWD - Class 7</title>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/general-assembly.css" id="theme">
 
@@ -25,7 +25,7 @@
 	<body>
 
 		<!--
-			Lesson 07 - Intro to Programming
+			Lesson 08 - JavaScript (pt. 1)
 
 			Learning Objectives:
 			- Identify JavaScript's capabilities
@@ -40,6 +40,7 @@
 			<div class="slides">
 				<section class="center">
 					<h1>HELLO</h1>
+					<img class="fragment" src="img/class07/hello.jpg">
 
 					<div class="text-left">
 						<!-- <p class="text-smaller">1. Pull the latest <code>class-exercises</code></p> -->
@@ -110,15 +111,15 @@
 					<div class="text-left">
 						<p>&#149; JavaScript &ne; Java</p>
 						<p>&#149; Born in 1995 - created in 10 days by Brendan Eich</p>
-						<p>&#149; Initially dismissed as amateur, JavaScript is now one of the most <a href="http://githut.info/">popular languages</a></p>
+						<p>&#149; JavaScript is now one of the most <a href="http://githut.info/">popular languages</a></p>
 						<p>&#149; Attwood's Law &rArr; "Any application that can be written in JavaScript, will eventually be written in JavaScript."</p>
 					</div>
 				</section>
 
 				<section class="center">
-					<h1>What Can JavaScript Do?</h1>
+					<h1>What Can JavaScript Do In the Browser?</h1>
 					<p>
-						Go out on the internet and find some cool effects on your favorite sites. We want to try to explore the different things we can add to our sites by utilizing Javascript.
+						Let's explore.
 					</p>
 				</section>
 
@@ -136,7 +137,7 @@
 					</div>
 				</section>
 
-				<section data-background="#FFF">
+<!-- 				<section data-background="#FFF">
 					<h2 class="text-left">Javascript: What Can It Do?</h2>
 					<hr>
 
@@ -147,7 +148,7 @@
 						<p class="pad-left-lg">&rArr; Changing CSS Styles</p>
 						<p class="pad-left-lg">&rArr; Loading in data dynamically</p>
 					</div>
-				</section>
+				</section> -->
 
 				<section data-background="#FFF">
 					<h2 class="text-left">Javascript vs HTML + CSS?</h2>
@@ -157,7 +158,7 @@
 						<p>&#149; HTML/CSS are used to define <u>initial</u> page state</p>
 						<p>&#149; JS is used to define how page state can <u>change</u></p>
 						<hr>
-						<p>&#149; HTML/CSS are <u>static</u></p>
+						<p>&#149; HTML/CSS are (mostly) <u>static</u></p>
 						<p>&#149; JS is <u>dynamic</u></p>
 					</div>
 				</section>
@@ -165,7 +166,7 @@
 				<!-- INTRO TO PROGRAMMING -->
 				<section class="center">
 					<h1>Intro To Programming</h1>
-					<p>Next stop: elite h4x0r</p>
+					<p>Next stop: 1337 h4x0r</p>
 				</section>
 
 				<section data-background="#FFF">
@@ -287,9 +288,9 @@
 						<p>2. Open the file <code>script.js</code></p>
 						<p>3. Add the following lines:</p>
 <pre><code>
-	alert('this is an alert. this is annoying')
+	alert('this is an alert. this is annoying');
 
-	document.write('writing the document, like a boss')
+	document.write('writing the document, like a boss');
 
 </code></pre>
 						<p>4. Save and open <code>index.html</code> in the browser</p>
@@ -297,7 +298,7 @@
 				</section>
 
 				<section class="center">
-					<h1>5 Minute Break</h1>
+					<h1>Let's take a Break</h1>
 					<img src="img/main/break-time-bear.jpg">
 				</section>
 
@@ -365,7 +366,7 @@
 						<div class="pad-left-lg">
 							<p>&#149; The product of 10 and 10:</p>
 <pre><code>
-	document.write(10 * 10)
+	document.write(10 * 10);
 
 </code></pre>
 							<p>&#149; The quotient of 100 and 10</p>
@@ -391,8 +392,8 @@
 						<p class="text-smaller">&#149; Will store the piece of data in memory</p>
 						<p class="text-smaller">&#149; Use the variable's name to "call" it, or retrieve it from memory:</p>
 <pre><code>
-	var x = 2
-	var y = 2
+	var x = 2;
+	var y = 2;
 
 	x
 	=> 2
@@ -416,8 +417,8 @@
 						<p class="pad-left-lg">&rArr; Cannot use spaces; use hyphens or underscores instead</p>
 						<p class="pad-left-lg">&rArr; Better yet, use CamelCase:</p>
 <pre><code>
-	var currentTemp = 70
-	var targetTemp = 73
+	var currentTemp = 70;
+	var targetTemp = 73;
 
 </code></pre>
 					</div>
@@ -430,7 +431,7 @@
 					<p>1. Create a variable, x, and assign it to 2</p>
 					<p>
 <pre><code>
-	var x = 2
+	var x = 2;
 	> 2
 
 </code></pre>
@@ -461,7 +462,7 @@
 						<p>&rArr; You must <u>reassign</u> variables to change them</p>
 					</div>
 <pre><code>
-	var x = 2
+	var x = 2;
 	> 2
 
 	x * 2
@@ -485,12 +486,12 @@
 						<p>1. Open <code>fist_javascript</code> in SublimeText</p>
 						<p>2. Store your previous arthimetic in variables:</p>
 <pre><code>
-	var num1 = 10 * 10
+	var num1 = 10 * 10;
 
 </code></pre>
 						<p>3. Use <code>document.write()</code> with the vaiables:</p>
 <pre><code>
-	document.write(num1)
+	document.write(num1);
 
 </code></pre>
 
@@ -514,18 +515,18 @@
 						<p class="text-smaller">&#149; What does this function do?</p>
 <pre><code>
 	function hello () {
-		var greeting = 'hello!'
+		var greeting = 'hello!';
 
-		greeting = 'hello, world!'
+		greeting = 'hello, world!';
 
-		alert(greeting)
+		alert(greeting);
 	}
 
 </code></pre>
 					</div>
 				</section>
 
-				<section class="center">
+				<section class="center" id="cool-id">
 					<p><code>document.getElementById()</code></p>
 				</section>
 
@@ -557,7 +558,7 @@
 						<p class="text-smaller">3. Use <code>document.getElementId()</code> to target the above elements and change their text color</p>
 
 <pre><code>
-	document.getElementById('title').style.color="red"
+	document.getElementById('title').style.color='red';
 
 </code></pre>
 					</div>
@@ -574,7 +575,7 @@
 					<hr>
 
 					<div class="text-left">
-						<h4>Class #9 (of 20) - Thursday, November 19th</h4>
+						<h4>Class #8 (of 20) - Thursday, November 19th</h4>
 
 						<div class="text-left">
 							<p>&rArr; More JavaScript!</p>
