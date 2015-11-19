@@ -18,6 +18,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .text-smaller {
   font-size: 0.85em !important; }
 
+.text-smallest {
+  font-size: 0.75em !important; }
+
 .push-margin {
   margin: 10px 0 !important; }
 
