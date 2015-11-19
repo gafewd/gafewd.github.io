@@ -57,7 +57,7 @@
 
 				<!-- ANNOUNCEMENTS -->
 				<section class="center">
-					<h1>Announcements:</h1>
+					<h1>Reminder:</h1>
 
 					<div class="text-left">
 						<p>&#149; Final Projects! First deliverable due 11/24 (Tuesday)</p>
@@ -79,7 +79,7 @@
 					<div class="text-left">
 						<p class="text-smaller">&#149; Review <code>document.getElementById()</code></p>
 						<p class="text-smaller">&#149; Review functions</p>
-						<p class="text-smaller">&#149; Browser Events</p>
+						<p class="text-smaller">&#149; More Browser Events</p>
 						<p class="text-smaller pad-left-lg"><code>.onmouseover</code>/<code>.onmouseout</code> events</p>
 						<p class="text-smaller">&#149; User Input Elements (<code>&lt;input&gt;</code> and <code>&lt;select&gt;</code>)
 						<p class="text-smaller">&#149; <code>.innerHTML</code> property</p>
@@ -89,9 +89,9 @@
 				</section>
 
 				<!-- REVIEW: getElementById() -->
-				<section class="center">
+<!-- 				<section class="center">
 					<p><code>document.getElementById()</code></p>
-				</section>
+				</section> -->
 
 				<section data-background="#FFF">
 					<h2 class="text-left">document.getElementById() - review</h2>
@@ -107,19 +107,19 @@
 						<p class="text-smallest">&#149; Once an element is returned, additional JavaScript methods can be "called" on it</p>
 						<p class="text-smallest">&#149; Can use variables to store refrences to HTML elements:</p>
 <pre><code>
-	var logo = document.getElementById('logo')
+	var logo = document.getElementById('logo');
 
-	logo.onclick = someFunction
+	logo.onclick = someFunction;
 
 </code></pre>
 					</div>
 				</section>
 
 				<!-- REVIEW: functions -->
-				<section class="center">
+<!-- 				<section class="center">
 					<h1>Functions</h1>
 					<img src="img/class07/conjunction-function.jpg">
-				</section>
+				</section> -->
 
 				<section data-background="#FFF">
 					<h2 class="text-left">Functions - Review</h2>
@@ -130,10 +130,10 @@
 						<p class="text-smaller">&#149; Think of them as miniature programs</p>
 
 <pre><code>
-	function actor () {
-		var greatestActor = 'Keanu Reeves'
+	function coolGuyAlert () {
+		var coolGuy = 'Stas';
 
-		alert('My favorite actor is ' + greatestActor)
+		alert(coolGuy + 'is a cool guy.');
 	}
 
 </code></pre>
@@ -144,29 +144,29 @@
 				</section>
 
 				<section data-background="#FFF">
-					<h2 class="text-left">Functions</h2>
+					<h2 class="text-left">Functions - Addtl info!</h2>
 					<hr>
 
 					<div class="text-left">
 						<p class="text-smallest">&#149; Functions can be associated with variables...</p>
 <pre><code>
 	var doSomething = function () {
-		alert('do something!')
+		alert('do something!');
 	}
 
 </code></pre>
 						<p class="text-smallest">&#149; ...and then used to respond to browser events:</p>
 <pre><code>
-	document.getElementById('someBtn').onclick = doSomething
+	document.getElementById('some-btn').onclick = doSomething;
 
 </code></pre>
 						<p class="text-smallest">&#149; IMPORTANT - define functions before calling them:</p>
 <pre><code>
 	// WOULD NOT WORK!
-	document.getElementById('someBtn').onclick = doSomething
+	document.getElementById('some-btn').onclick = doSomething;
 
 	var doSomething = function () {
-		alert('do something!')
+		alert('do something!'):
 	}
 </code></pre>
 					</div>
@@ -201,10 +201,10 @@
 					<div class="text-left">
 						<p>Use <code>.onmouseover</code> and <code>.onmouseout</code> to achieve a "hover" effect:</p>
 <pre><code>
-	var button = document.getElementById('someElement')
+	var button = document.getElementById('someElement');
 
-	button.onmouseover = overFunction
-	button.onmouseout = outFunction
+	button.onmouseover = overFunction;
+	button.onmouseout = outFunction;
 
 </code></pre>
 						<p class="text-smaller"><code>.onmouseover</code> is triggered when a user moves the cursor over the desired HTML element</p>
@@ -214,7 +214,7 @@
 
 				<section class="center">
 					<h1>Code Along</h1>
-						<p><a href="http://codepen.io/cheshireoctopus/pen/gaEegW?editors=101">http://codepen.io/cheshireoctopus/pen/gaEegW?editors=101</a></p>
+						<p><a href="http://codepen.io/glumac/pen/vNPwYv">http://codepen.io/glumac/pen/vNPwYv</a></p>
 				</section>
 
 				<section class="center">
@@ -233,12 +233,12 @@
 </code></pre>
 						<p class="text-smaller">&rArr; To read:</p>
 <pre><code>
-	document.getElementById('someId').innerHTML
+	document.getElementById('some-id').innerHTML
 	=> 'Hello, World!'
 </code></pre>
 						<p class="text-smaller">&rArr; To write:</p>
 <pre><code>
-	document.getElementById('someId').innerHTML = 'Cats'
+	document.getElementById('some-id').innerHTML = 'Cats';
 </code></pre>
 					</div>
 				</section>
@@ -247,14 +247,14 @@
 					<h2>Code Along</h2>
 
 					<div class="text-left">
-						<p class="text-smaller">1. Go to <a href="http://codepen.io/cheshireoctopus/pen/YyBmMB?editors=101">http://codepen.io/cheshireoctopus/pen/YyBmMB?editors=101</a></p>
+						<p class="text-smaller">1. Go to <a href="http://codepen.io/glumac/pen/YygbLo?editors=101">http://codepen.io/glumac/pen/YygbLo?editors=101</a></p>
 						<p class="text-smaller">2. Add <code>.onclick</code> events to the <code>&lt;button&gt;</code>'s</p>
 						<p class="text-smaller">3. When clicked, these buttons should add/subtract from <code>id="result"</code></p>
 						<p class="text-smaller">4. Use <code>.innerHTML</code> to change the text inside <code>id="result"</code></p>
 
 <pre><code>
 	document.getElementById('zero').onclick = function () {
-		document.getElementById('result').innerHTML = 0
+		document.getElementById('result').innerHTML = 0;
 	}
 
 </code></pre>
@@ -362,12 +362,12 @@
 						<p>&#149; Is used to read and write values:</p>
 						<p class="pad-left-lg">&rArr; Read:</p>
 <pre><code>
-	document.getElementById('someInput').value
+	document.getElementById('some-input').value
 
 </code></pre>
 						<p class="pad-left-lg">&rArr; Write:</p>
 <pre><code>
-	document.getElementById('someInput').value = 'some value'
+	document.getElementById('some-input').value = 'some value'
 
 </code></pre>
 					</div>
@@ -380,7 +380,7 @@
 						<p class="text-smallest">&#149; <code>.value</code> can also be used on <code>&lt;select&gt;</code> elements</p>
 						<p class="text-smallest">&#149; Uses the <code>&lt;option&gt;</code>'s <code>value</code> attribute</p>
 <pre><code>
-	<select id="someDropdown">
+	<select id="some-dropdown">
 		<option value="option-one">Beer</option>
 		<option value="option-two">Coffee</option>
 		<option value="option-three">Water</option>
@@ -390,7 +390,7 @@
 
 						<p class="text-smallest">&#149; The following will return the above's selected <code>&lt;option&gt;</code> <u>value!!!!</u></p>
 <pre><code>
-	document.getElementById('someDrowpdown').value
+	document.getElementById('some-dropdown').value
 
 </code></pre>
 						<p class="text-smallest">&#149; Returns "option-one", NOT "Beer"</p>
@@ -404,7 +404,7 @@
 						<p class="text-smallest">1. User enters a value into the red, green, and blue fields</p>
 						<p class="text-smallest">2. User clicks 'Change the Color!' <code>&lt;button&gt;</code>, triggers a function</p>
 						<p class="text-smallest">3. Inside this function, create variables for the color values (R, G, B)</p>
-						<p class="text-smallest">4. Relpace the text inside <code>id=colorfultext</code> with the new RGB values</p>
+						<p class="text-smallest">4. Relpace the text inside <code>id=colorful-text</code> with the new RGB values</p>
 						<p class="text-smallest">5. Use <code>.style.backgroundColor</code> to change the background color of the <code>&lt;body&gt;</code></p>
 					</div>
 				</section>
