@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>FEWD - Class 8</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/general-assembly.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<!--
+			Lesson 08 - Intro to Programming
+
+			Learning Objectives:
+
+		-->
+
+		<div class="reveal">
+			<div class="slides">
+				<section class="center">
+					<h1>HELLO</h1>
+
+					<div class="text-left">
+						<p class="text-smaller">1. Pull the latest <code>class-exercises</code></p>
+						<p class="text-smaller">2. Copy the following directories into <code>my-class-work/</code>
+						<p class="text-smaller pad-left-lg"> &rArr; <code>lifetime-supply</code>
+						<p class="text-smaller pad-left-lg"> &rArr; <code>rgb-color-choice</code>
+						<p class="text-smaller">3. Copy the following directories into <code>homework/</code>
+						<p class="text-smaller pad-left-lg"> &rArr; <code>temperature-converter</code>
+					</div>
+				</section>
+
+				<section class="center">
+					<h1>Class #8 (of 20)</h1>
+					<h1>JavaScript (pt. 2)</h1>
+				</section>
+
+				<!-- ANNOUNCEMENTS -->
+				<section class="center">
+					<h1>Announcements:</h1>
+
+					<div class="text-left">
+						<p>&#149; Final Projects! First deliverable due 11/24 (Tuesday)</p>
+						<p class="pad-left-lg">&rArr; Project Proposal & Wireframes</p>
+					</div>
+				</section>
+
+				<!-- QUESTIONS -->
+				<section class="center">
+					<h1>Questions</h1>
+					<img src="img/main/questions.jpg">
+				</section>
+
+				<!-- AGENDA -->
+				<section data-background="#FFF">
+					<h2 class="text-left">Agenda</h2>
+					<hr>
+
+					<div class="text-left">
+						<p class="text-smaller">&#149; Review <code>document.getElementById()</code></p>
+						<p class="text-smaller">&#149; Review functions</p>
+						<p class="text-smaller">&#149; Browser Events</p>
+						<p class="text-smaller pad-left-lg"><code>.onmouseover</code>/<code>.onmouseout</code> events</p>
+						<p class="text-smaller">&#149; <code>.innerHTML</code> property</p>
+						<p class="text-smaller">&#149; <code>.value</code> property</p>
+						<p class="text-smaller">&#149; JS labs</p>
+					</div>
+				</section>
+
+				<!-- REVIEW: getElementById() -->
+				<section class="center">
+					<p><code>document.getElementById()</code></p>
+				</section>
+
+				<section data-background="#FFF">
+					<h2 class="text-left">document.getElementById() - review</h2>
+					<hr>
+
+					<div class="text-left">
+						<p class="text-smallest">&#149; Used to query HTML and return an element with a specific ID attribute</p>
+<pre><code>
+	document.getElementById('logo')
+
+</code></pre>
+						<p class="text-smallest">&#149; The above will look through an HTML document and return the first element with and ID = "logo"</p>
+						<p class="text-smallest">&#149; Once an element is returned, additional JavaScript methods can be "called" on it</p>
+						<p class="text-smallest">&#149; Can use variables to store refrences to HTML elements:</p>
+<pre><code>
+	var logo = document.getElementById('logo')
+
+	logo.onclick = someFunction
+
+</code></pre>
+					</div>
+				</section>
+
+				<!-- REVIEW: functions -->
+				<section class="center">
+					<h1>Functions</h1>
+					<img src="img/class07/conjunction-function.jpg">
+				</section>
+
+				<section data-background="#FFF">
+					<h2 class="text-left">Functions - Review</h2>
+					<hr>
+
+					<div class="text-left">
+						<p class="text-smaller">&#149; Functions are chunks of code, grouped together, that execute (or run) line-by-line</p>
+						<p class="text-smaller">&#149; Think of them as miniature programs</p>
+
+<pre><code>
+	function actor () {
+		var greatestActor = 'Keanu Reeves'
+
+		alert('My favorite actor is ' + greatestActor)
+	}
+
+</code></pre>
+						<p class="text-smaller pad-left-lg">1. What is the name of this function?</p>
+						<p class="text-smaller pad-left-lg">2. What does this function output?</p>
+						<p class="text-smaller pad-left-lg">3. How would you call, or invoke, this function?</p>
+					</div>
+				</section>
+
+				<section data-background="#FFF">
+					<h2 class="text-left">Functions</h2>
+					<hr>
+
+					<div class="text-left">
+						<p class="text-smallest">&#149; Functions can be associated with variables...</p>
+<pre><code>
+	var doSomething = function () {
+		alert('do something!')
+	}
+
+</code></pre>
+						<p class="text-smallest">&#149; ...and then used to respond to browser events:</p>
+<pre><code>
+	document.getElementById('someBtn').onclick = doSomething
+
+</code></pre>
+						<p class="text-smallest">&#149; IMPORTANT - define functions before calling them:</p>
+<pre><code>
+	// WOULD NOT WORK!
+	document.getElementById('someBtn').onclick = doSomething
+
+	var doSomething = function () {
+		alert('do something!')
+	}
+</code></pre>
+					</div>
+				</section>
+
+				<!-- BROWSER EVENTS -->
+				<section class="center">
+					<h1>Browser Events</h1>
+				</section>
+
+				<section data-background="#FFF">
+					<h2 class="text-left">Browser Events</h2>
+					<hr>
+
+					<div class="text-left">
+						<p>&#149; Events that users perform in the browser:</p>
+						<p class="pad-left-lg text-smaller">&rArr; click</p>
+						<p class="pad-left-lg text-smaller">&rArr; mouse over</p>
+						<p class="pad-left-lg text-smaller">&rArr; mouse out</p>
+						<p class="pad-left-lg text-smaller">&rArr; key down</p>
+						<p class="pad-left-lg text-smaller">&rArr; key up</p>
+						<p class="pad-left-lg text-smaller">&rArr; form submit</p>
+						<p>&#149; We can use JavaScript to track and respond to events</p>
+						<p>&#149; <a href="http://eloquentjavascript.net/14_event.html">More Events Info</a></p>
+					</div>
+				</section>
+
+				<section data-background="#FFF">
+					<h2 class="text-left">Browser Events - Mouse Over/Out</h2>
+					<hr>
+
+					<div class="text-left">
+						<p>Use <code>.onmouseover</code> and <code>.onmouseout</code> to achieve a "hover" effect:</p>
+<pre><code>
+	var button = document.getElementById('someElement')
+
+	button.onmouseover = overFunction
+	button.onmouseout = outFunction
+
+</code></pre>
+						<p class="text-smaller"><code>.onmouseover</code> is triggered when a user moves the cursor over the desired HTML element</p>
+						<p class="text-smaller"><code>.onmouseout</code> is triggered when a user's cursor leaves said element</p>
+					</div>
+				</section>
+
+				<section class="center">
+					<h1>Code Along</h1>
+						<p><a href="http://codepen.io/cheshireoctopus/pen/gaEegW?editors=101">http://codepen.io/cheshireoctopus/pen/gaEegW?editors=101</a></p>
+				</section>
+
+				<section class="center">
+					<h1>.innerHTML Property</h1>
+				</section>
+
+				<section data-background="#FFF">
+					<h2 class="text-left">.innerHTML Property</h2>
+
+					<div class="text-left">
+						<p class="text-smaller">&#149; Often, you will want to set/get text from HTML</p>
+						<p class="text-smaller">&#149; <code>.innerHTML</code> can read and write HTML</p>
+						<p class="text-smaller">&#149; Assuming the following HTML:</p>
+<pre><code>
+	<div id="result">Hello, World!</div>
+</code></pre>
+						<p class="text-smaller">&rArr; To read:</p>
+<pre><code>
+	document.getElementById('someId').innerHTML
+	=> 'Hello, World!'
+</code></pre>
+						<p class="text-smaller">&rArr; To write:</p>
+<pre><code>
+	document.getElementById('someId').innerHTML = 'Cats'
+</code></pre>
+					</div>
+				</section>
+
+				<section class="center">
+					<h2>Code Along</h2>
+
+					<div class="text-left">
+						<p class="text-smaller">1. Go to <a href="http://codepen.io/cheshireoctopus/pen/YyBmMB?editors=101">http://codepen.io/cheshireoctopus/pen/YyBmMB?editors=101</a></p>
+						<p class="text-smaller">2. Add <code>.onclick</code> events to the <code>&lt;button&gt;</code>'s</p>
+						<p class="text-smaller">3. When clicked, these buttons should add/subtract from <code>id="result"</code></p>
+						<p class="text-smaller">4. Use <code>.innerHTML</code> to change the text inside <code>id="result"</code></p>
+
+<pre><code>
+	document.getElementById('zero').onclick = function () {
+		document.getElementById('result').innerHTML = 0
+	}
+
+</code></pre>
+					</div>
+				</section>
+
+				<section class="center">
+					<h1>.value Property</h1>
+				</section>
+
+				<section data-background="#FFF">
+					<h2 class="text-left">.value Property</h2>
+					<hr>
+					<div class="text-left">
+						<p>&#149; <code>.value</code> is used to get/set <code>&lt;input&gt;</code> values</p>
+						<p>&#149; WATCHOUT - similar to <code>.innerHTML</code></p>
+						<p>&#149; Is used to read and write values:</p>
+						<p class="pad-left-lg">&rArr; Read:</p>
+<pre><code>
+	document.getElementById('someInput').value
+
+</code></pre>
+						<p class="pad-left-lg">&rArr; Write:</p>
+<pre><code>
+	document.getElementById('someInput').value = 'some value'
+
+</code></pre>
+					</div>
+				</section>
+
+				<section class="center">
+					<h2>Exercise: RGB Color Choice</h2>
+					<div class="text-left">
+						<p class="text-smallest">Open <code>rgb-color-choice/</code>; write JS for the following:</p>
+						<p class="text-smallest">1. User enters a value into the red, green, and blue fields</p>
+						<p class="text-smallest">2. User clicks 'Change the Color!' <code>&lt;button&gt;</code>, triggers a function</p>
+						<p class="text-smallest">3. Inside this function, create variables for the color values (R, G, B)</p>
+						<p class="text-smallest">4. Relpace the text inside <code>id=colorfultext</code> with the new RGB values</p>
+						<p class="text-smallest">5. Use <code>.style.backgroundColor</code> to change the background color of the <code>&lt;body&gt;</code></p>
+					</div>
+				</section>
+
+				<section class="center">
+					<h2>Exercise: Lifetime Supply</h2>
+					<div class="text-left">
+						<p class="text-smallest">Open <code>lifetime-supply/</code>; write JS for the following:</p>
+						<p class="text-smallest">1. Store your current age into a variable</p>
+						<p class="text-smallest">2. Store a maximum age into a variable</p>
+						<p class="text-smallest">3. Store a favorite drink (from a drop-down) into a variable</p>
+						<p class="text-smallest">4. Store an amount per day into a variable</p>
+						<p class="text-smallest">5. Calculate how many you would eat total for the rest of your life</p>
+						<p class="text-smallest">6. Output your results to the user</p>
+					</div>
+				</section>
+
+				<section class="center">
+					<h2>Exercise/HW: Temperature Converter</h2>
+					<div class="text-left">
+						<p class="text-smallest">Open <code>temperature-converter/</code></p>
+						<p class="text-smallest">&#149; Goal: Create an application that converts farenheit to celsius (and vice versa)</p>
+						<p class="text-smallest">&#149; There is no starter code (HTML/CSS/JS); this is up to you!</p>
+						<p class="text-smallest">&#149; Bonus Challenges:</p>
+						<p class="text-smallest pad-left-lg">&rArr; Use an event other than <code>.onclick</code> (hint: research key events)</p>
+						<p class="text-smallest pad-left-lg">&rArr; Change the background based on user input (hint: research <code>if/else</code> statements)</p>
+					</div>
+				</section>
+
+				<!-- THE END -->
+				<section class="center">
+					<img src="img/main/the-end.jpg">
+				</section>
+
+				<!-- ON DECK -->
+				<section data-background="#FFF">
+					<h2 class="text-left">What's On Deck: jQuery (pt. 1)</h2>
+					<hr>
+
+					<div class="text-left">
+						<h4>Class #9 (of 20) - Tuesday, November 24th</h4>
+
+						<div class="text-left">
+							<p>&#149; If/Else (boolean logic)</p>
+							<p>&#149; Anonymous vs. Named Functionsm</p>
+							<p>&#149; Functions and Arguments</p>
+							<p>&#149; jQuery</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="center">
+					<h1>Exit Tickets!</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
