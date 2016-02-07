@@ -1,47 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>FEWD 72</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-	<link rel="stylesheet" type="text/css" href="css/index-styles.css">
+    <title>FEWD</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<div class="container">
-		<div class="row text-center">
-			<div class="col-md-12">
-				<h1 class="text-jumbo">FEWD 72 Notes</h1>
-				<hr>
-			</div>
-		</div>
 
-		<div class="row text-center">
-			<div class="col-md-8 col-md-offset-2 text-larger">
-				<ul class="list-group">
-					<li class="list-group-item"><a href="class-00-github.html">Class 00 - GitHub - 10/22/2015</a></li>
-					<li class="list-group-item"><a href="class-01-html.html">Class 01 - Intro to HTML - 10/27/2015</a></li>
-					<li class="list-group-item"><a href="class-02-css.html">Class 02 - Intro to CSS - 10/29/2015</a></li>
-					<li class="list-group-item"><a href="class-03-advanced-css.html">Class 03 - CSS: Display + Box Model - 11/03/2015</a></li>
-					<li class="list-group-item"><a href="class-04-layout.html">Class 04 - CSS: Layout - 11/05/2015</a></li>
-					<li class="list-group-item"><a href="class-05-floats.html">Class 05 - CSS: Floats & Clears - 11/10/2015</a></li>
-					<li class="list-group-item"><a href="class-06-floats-pt2.html">Class 06 - CSS: Floats & Clears (pt. 2) - 11/12/2015</a></li>
-					<li class="list-group-item"><a href="class-07-javascript-1.html">Class 07 - JavaScript (pt. 1) - 11/17/2015</a></li>
-					<li class="list-group-item"><a href="class-08-javascript-2.html">Class 08 - JavaScript (pt. 2) - 11/19/2015</a></li>
-					<li class="list-group-item"><a href="class-09-jquery-1.html">Class 09 - jQuery (pt. 1) - 11/24/2015</a></li>
-					<li class="list-group-item"><a href="class-10-jquery-2.html">Class 10 - jQuery (pt. 2) - 12/01/2015</a></li>
-					<li class="list-group-item"><a href="class-11-jquery-3.html">Class 11 - jQuery (pt. 3) - 12/03/2015</a></li>
-					<li class="list-group-item"><a href="class-12-jquery-4.html">Class 12 - jQuery (pt. 4) - 12/08/2015</a></li>
-					<li class="list-group-item"><a href="class-13-jquery-5.html">Class 13 - jQuery (pt. 5) - 12/10/2015</a></li>
-					<li class="list-group-item"><a href="class-14-responsive-1.html">Class 14 - Responsive Web Design (pt. 1) - 12/15/2015</a></li>
-					<li class="list-group-item"><a href="class-15-responsive-2.html">Class 15 - Responsive Web Design (pt. 2) - 12/17/2015</a></li>
-					<li class="list-group-item"><a href="class-16-css-positioning-and-animation.html">Class 16 - CSS Positioning and Animation - 12/22/2015</a></li>
-					<li class="list-group-item"><a href="class-17-media-and-plugins.html">Class 17 - Media and Plugins - 01/05/2016</a></li>
-					<li class="list-group-item"><a href="class-18-bootstrap-and-apis.html">Class 18 - Bootstrap and API's - 01/07/2016</a></li>
-					<li class="list-group-item"><a href="class-19-student-choice.html">Class 19 - Production Ready + Student Choice - 01/12/2016</a></li>
-					<li class="list-group-item"><a href="class-20-final.html">Class 20 - Final Class - 01/14/2016</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<body>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/main/ga-logo.png" width="20" heigh="20" alt="general assembly logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active" href="index.html"><a>Home</a></li>
+                    <li><a href="main/notes.html">Notes</a></li>
+                    <li><a href="main/syllabus.html">Syllabus</a></li>
+                    <li><a href="main/final-project.html">Final Project</a></li>
+                    <li><a href="main/resources.html">Resources</a></li>
+                    <li><a href="main/about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 text-center">
+                <img src="img/main/fewd-logo.png" alt="general assembly logo">
+            </div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Home</h1>
+                <p>
+                    Hello, and welcome to <a href="http://generalassemb.ly">General Assembly's</a> Front End Web Development course.
+                </p>
+                <h3>Instructional Team</h3>
+                <hr>
+                <!-- <ul>
+                    <li><strong>Instructor:</strong> Chandler Moisen</li>
+                    <li><strong>Instructional Associate:</strong> Mollie Wolfe</li>
+                    <li><strong>Instructional Associate:</strong> Nate Mandes</li>
+                </ul> -->
+                <div class="row text-center	">
+                    <div class="col-md-4">
+                        <img src="img/main/chandler.jpg" class="img-rounded" alt="">
+                        <h4>Chandler Moisen</h4>
+                        <p>hello@chandlermoisen.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/main/mollie.jpeg" class="img-rounded" alt="">
+                        <h4>Mollie Wolfe</h4>
+                        <p>molliewolfe@gmail.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/main/nate.jpg" class="img-rounded" alt="">
+                        <h4>Nate Mandes</h4>
+                        <p>nate.mandes@ga.co</p>
+                    </div>
+                </div>
+                <h3>Course Schedule</h3>
+                <hr>
+                <p>FEWD is comprised of a total of 60 hours of in-class instruction spread evenly over 20 classes.</p>
+                <p><strong>Start:</strong> 02/29/2015</p>
+                <p><strong>End:</strong> 05/09/2015</p>
+                <p><strong>Meets:</strong> Monday/Wednesday from 6:30PM - 9:30PM</p>
+                <p><strong>Location:</strong> <a href="https://www.google.com/maps/place/10+E+21st+St,+New+York,+NY+10010/data=!4m2!3m1!1s0x89c259a3c1dc503b:0xbbbe1ddd83dd89c?sa=X&ved=0ahUKEwjEuofaq-LKAhUHqB4KHW1qBJoQ8gEIHDAA">10 E 21st St.</a></p>
+                <p><strong>Room:</strong></p>
+                <h3>Communication</h3>
+                <hr>
+                <p>Communication between the instructional team and students is paramount for a successful learning environment. Students are strongly encouraged, at their convenience, to reach out to members of the instructional team with any questions.</p>
+                <h4>Slack</h4>
+                <p><a href="http://slack.com">Slack</a> will serve as the primary tool for communication between students and the instructional team. Before the first class, you will receive an invitation to our Slack room:</p>
+                <p><a href="http://fewdxx.slack.com/home">http://fewdxx.slack.com/home</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
+
 </html>
