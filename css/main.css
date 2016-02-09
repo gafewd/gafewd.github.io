@@ -2,24 +2,16 @@
 @import url(../lib/font/pf-din/pf-din.css);
 
 body {
+	margin-top: 50px;
+	padding-bottom: 50px;
 	font-size: 18px;
 }
 
-h1, h2, h3, h4, h5, h6, a, th {
+h1, h2, h3, h4, h5, h6, th {
 	font-family: 'Pf Din', Impact, sans-serif;
 	text-transform: uppercase;
 }
 
-a {
-	letter-spacing: 0.5px;
-}
-
-p, li, table {
+p, li, table, a {
 	font-family: 'News 706', sans-serif;
-}
-
-
-body {
-	margin-top: 50px;
-	padding-bottom: 50px;
 }
