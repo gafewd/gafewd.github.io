@@ -44,7 +44,7 @@
 			<div class="slides">
 				<section class="center">
 					<h1>HELLO</h1>
-					<p>Please download today's starter code from <a href="../main/syllabus.html">http://gafewd.github.io/main/syllabus.html</a></p>
+					<p>Please download <u>Class 01 starter code</u> from: <a href="../main/syllabus.html">http://gafewd.github.io/main/syllabus.html</a></p>
 				</section>
 
 				<section class="center">
@@ -59,7 +59,7 @@
 
 					<div class="text-left">
 						<p>&#149; Warmup Exercise</p>
-						<p>&#149; Final Project</p>
+						<!-- <p>&#149; Final Project</p> -->
 						<p>&#149; How the Internet Works</p>
 						<p>&#149; HTML Basics</p>
 						<p>&#149; HTML Tags</p>
@@ -89,7 +89,7 @@
 					</div>
 				</section>
 
-				<section class="center">
+<!-- 				<section class="center">
 					<h1>Final Project</h1>
 					<img src="../img/class01/final.jpg">
 				</section>
@@ -106,7 +106,7 @@
 						<p>&#149; Student Gallery: <a href="http://gallery.ga.co/">http://gallery.ga.co/</a></p>
 						<p>&#149; <a href="../main/final-project.html">Final project document</a></p>
 					</div>
-				</section>
+				</section> -->
 
 				<!-- How the Internet Works (10 - 15 mins) -->
 				<section class="center">
@@ -189,7 +189,7 @@
 					</div>
 				</section>
 
-				<section data-background="#FFF">
+				<!-- <section data-background="#FFF">
 					<h2 class="text-left">HTML - Say what?</h2>
 					<hr>
 
@@ -201,7 +201,7 @@
 						<p><u>L => Language</u></p>
 						<p class="text-smaller fragment pad-left-lg">Just like any language, HTML has its own vocabulary, grammar, and syntax. You can think of HTML as the language that the web speaks.</p>
 					</div>
-				</section>
+				</section> -->
 
 				<section class="center">
 					<h1>HTML Tags</h1>
@@ -217,7 +217,7 @@
 						<p>&#149; Think of an element as a structural piece of your site</p>
 						<p>&#149; Elements consist of :</p>
 						<p class="pad-left-lg text-smaller">Starting tag: <code>&lt;p&gt;</code></p>
-						<p class="pad-left-lg text-smaller">Content (text, image, video, other elements, etc.)</p>
+						<p class="pad-left-lg text-smaller">Content: text, image, video, other elements, etc.</p>
 						<p class="pad-left-lg text-smaller">Ending tag: <code>&lt;/p&gt;</code></p>
 						<p>&#149; The content is what the user sees</p>
 						<p>&#149; The tags tell the browser what TYPE of content it is and how to present it</p>
@@ -447,12 +447,12 @@
 
 				<!-- CODE ALONG: 2 - HTML Structure (5 - 7 mins) -->
 				<section class="center">
-					<h1>Code Along</h1>
+					<h1>Exercise</h1>
 					<div class="text-left text-smaller">
 						<p>1. Create a directory, <code>homework</code> in your <u>local</u> repo</p>
 						<p>2. Create a directory,  <code>ga-press-release</code>, in <code>homework</code></p>
 						<p>3. Create an <code>index.html</code> file inside <code>ga-press-release</code></p>
-						<p>4. Copy your code from CodePen</p>
+						<p>4. Copy your code from CodePen into <code>index.html</code></p>
 						<p>5. Save your code and right-click to open in browser</p>
 					</div>
 				</section>
@@ -505,7 +505,7 @@
 						<p>&#149; The &lt;img&gt; doesn't wrap content, so it doesn't close!</p>
 						<p>&#149; Requires a <b>src</b> attribute; tells the browser where the source of the image (the image file) is located</p>
 <pre><code>
-	&lt;img src="cookie.png"&gt;;
+	&lt;img src="cookie.png"&gt;
 
 </code></pre>
 					</div>
@@ -515,12 +515,19 @@
 					<h2 class="text-left">HTML - &lt;img&gt; tags; src attribute</h2>
 					<hr>
 					<div class="text-left">
-						<p>&lt;img&gt;'s <strong>src</strong> attribute can be a relative/absolute path</p>
+						<p>&lt;img&gt;'s <strong>src</strong> attribute can be a relative/absolute path:</p>
 						<p><strong>Relative:</strong></p>
-						<p class="pad-left-lg">&lt;img src="cookie.png"&gt;</p>
+<pre><code>
+ &lt;img src="cookie.png"&gt;
+
+</code></pre>
 						<p><strong>Absolute:</strong></p>
-						<p class="pad-left-lg">&lt;img src="https://www.google.com/images/
-						branding/googlelogo/2x/googlelogo_color_272x92dp.png"&gt;</p>
+						<div class="text-smaller">
+<pre><code>
+ &lt;img src="http://guardianlv.com/wp-content/uploads/2013/12/reeves2.jpg"&gt;
+
+</code></pre>
+						</div>
 					</div>
 				</section>
 
@@ -560,14 +567,14 @@
 				<!-- CODE ALONG 3: Anchor Tags (10 - 15 mins)-->
 				<section class="center">
 					<h1>Exercise/HW</h1>
-					<div class="text-left">
+					<div class="text-left text-smaller">
 						<p>1. Re-open the <code>ga-press-release</code> project</p>
 						<p>2. Add a new file, <code>about.html</code>, to the same directory</p>
 						<p>3. Ensure <code>about.html</code> contains proper formatting</p>
 						<p>4. Add two links to <code>ga-press-release.html</code>:</p>
 						<p class="pad-left-lg">Absolute: link to http://generassemb.ly</p>
 						<p class="pad-left-lg">Relative: link to about.html</p>
-						<p>5. Add a link to about.html that links back to the press release</p>
+						<p>5. Add a link to <code>about.html</code> that links back to <code>ga-press-release.html</code></p>
 					</div>
 				</section>
 
