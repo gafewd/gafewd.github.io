@@ -67,6 +67,10 @@ section.has-light-background {
 	padding-left: 50px !important;
 }
 
+.reveal pre code {
+	max-height: none !important;
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

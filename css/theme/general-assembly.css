@@ -27,6 +27,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .pad-left-lg {
   padding-left: 50px !important; }
 
+.reveal pre code {
+  max-height: none !important; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
