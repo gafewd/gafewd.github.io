@@ -14,14 +14,14 @@ header {
 
 main {
   background: yellow;
-  /*float: ;*/
-  /*width: ;*/
+  // float: ;
+  // width: ;
 }
 
 aside {
   background: green;
-  /*float: ;*/
-  /*width: ;*/
+  // float: ;
+  // width: ;
 }
 
 footer {
@@ -29,7 +29,7 @@ footer {
 }
 
 .clear {
-  clear: both;
+  // clear: ;
 }
 
 
