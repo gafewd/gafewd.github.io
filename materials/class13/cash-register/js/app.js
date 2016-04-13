@@ -5,6 +5,7 @@
 //
 // Instructions:
 // 1: Add a .submit event to the form; use an anonymous function to handle the sumbit
+// Inside the anonymous function:
 // 2: Remeber to prevent the default action on the form!
 // 3: Create a variable to store the user input from #newEntry
 // 4: Remember to call parseFloat() on this variable! It needs to be a number.
