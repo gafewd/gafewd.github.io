@@ -38,21 +38,18 @@
 				<section class="center">
 					<h1>HELLO</h1>
 
-					<div class="text-left text-smaller">
-						<p>1. Pull the latest <code>class-exercises</code></p>
-						<p>2. Copy the following directories into <code>my-class-work/</code>
+
+					<div class="text-left">
+						<p>1) Please download <a href="../materials/class14/class14.zip">Class 14 Starter Code</a></p>
+						<p>2) Move the following into your course work directory:</p>
 						<p class=" pad-left-lg"><code>super-school-news/</code></p>
 						<p class=" pad-left-lg"><code>responsive-news/</code></p>
-						<!-- <p>3. Copy the following directories into <code>homework/</code> -->
-						<!-- <p class=" pad-left-lg"><code>cash-register/</code></p> -->
-						<p>3. Solutions to last week's homework: </p>
-						<p class=" pad-left-lg"><code>cash-register-solution/</code></p>
 					</div>
 				</section>
 
 				<section class="center">
-					<h1>Class #14 (of 20)</h1>
-					<h1>Responsive Web Design</h1>
+					<h1>Class #14 - 04/18/2016</h1>
+					<h2>Responsive Web Design</h2>
 				</section>
 
 				<!-- ANNOUNCEMENTS -->
@@ -61,11 +58,13 @@
 
 					<div class="text-left">
 						<p>&#149; Final Projects:</p>
-						<p class="pad-left-lg">&rArr; Updated JS draft - due 12/22 (Tuesday)</p>
-						<p>&#149; No class:</p>
-						<p class="pad-left-lg">&rArr; 12/24 (Thurs)</p>
-						<p class="pad-left-lg">&rArr; 12/29 (Tues)</p>
-						<p class="pad-left-lg">&rArr; 12/31 (Thurs)</p>
+						<p class="pad-left-lg text-smaller">&rArr; Milestone 4: Revised JS Draft - due 04/25</p>
+						<p class="pad-left-lg text-smaller">&rArr; Classes 18 and 19 (05/02 and 05/04): in-class project work</p>
+						<p>&#149; Office Hours:</p>
+						<p class="pad-left-lg text-smaller">&rArr; Dedicated Tuesday/Thursday Office Hours?</p>
+						<p class="pad-left-lg text-smaller">&rArr; Dedicated Sunday Office Hours?</p>
+						<p class="pad-left-lg text-smaller">&rArr; Final weekend office hours Sat/Sun (05/07 and (05/08)</p>
+						<p>&#149; Last Class on Monday, 05/09...21 days away!</p>
 					</div>
 				</section>
 
@@ -75,11 +74,11 @@
 					<hr>
 
 					<div class="text-left">
-						<p class="text-smaller">&#149; Cash Register Review</p>
-						<p class="text-smaller">&#149; HTML/CSS Warm Up</p>
-						<p class="text-smaller">&#149; Responsive Web Design</p>
-						<p class="text-smaller">&#149; Fluid Web Design</p>
-						<p class="text-smaller">&#149; Media Queries</p>
+						<p>&#149; Cash Register Review</p>
+						<p>&#149; CSS: <code>box-sizing: border-box;</code></p>
+						<p>&#149; Responsive Web Design Overview</p>
+						<p>&#149; Fluid Web Design</p>
+						<p>&#149; Media Queries</p>
 					</div>
 				</section>
 
@@ -94,24 +93,94 @@
 					<h1>Cash Register Review</h1>
 				</section>
 
-				<!-- HTML/CSS Warm Up -->
+				<!-- Box-Sizing: Border-Box -->
 				<section class="center">
-					<h1>HTML/CSS Layout Review</h1>
-					<p>Open <code>super-school-news/</code> in SublimeText</p>
-					<img src="../img/class14/super-school-news.png" alt="">
+					<h2><code>box-sizing: border-box;</code></h2>
+				</section>
+
+				<section class="text-left" data-background="#FFF">
+					<h3>Box-Sizing</h3>
+					<hr>
+
+					<p class="text-smaller">Q: What is the width of the following element? (Hint: it's not 100px...)</p>
+<pre><code>
+	.box {
+		height: 100px;
+		width: 100px;
+		border: 1px solid black;
+		padding: 20px;
+	}
+
+</code></pre>
+					<div class="fragment text-smaller">
+						<p>A: <a href="http://codepen.io/cheshireoctopus/pen/aNGWGw?editors=1100">142px</a></p>
+						<p class="pad-left-lg">100px in width</p>
+						<p class="pad-left-lg">40px of padding (20px on left and right)</p>
+						<p class="pad-left-lg">2px of border (1px on left and right)</p>
+					</div>
+				</section>
+
+				<section class="text-left" data-background="#FFF">
+					<h3>Box-Sizing</h3>
+					<hr>
+
+					<p>&#149; By default, the width of an element is the sum of:</p>
+					<p class="pad-left-lg">&rArr; width (content)</p>
+					<p class="pad-left-lg">&rArr; padding</p>
+					<p class="pad-left-lg">&rArr; border</p>
+					<p class="fragment">&#149; A bit counter-intuitive as the set width of an element increases as you add padding and border</p>
+					<p class="fragment">&#149; CSS3 introduced <code>box-sizing</code> to address the confusion</p>
+				</section>
+
+				<section class="text-left" data-background="#FFF">
+					<h3>Box-Sizing</h3>
+					<hr>
+					<p>&#149; Apply the <code>box-sizing: border-box;</code> rule to the previous CodePen</p>
+<pre><code>
+	.box {
+		height: 100px;
+		width: 100px;
+		border: 1px solid black;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+</code></pre>
+					<p>&#149; Right-click to inspect and examine the element's overall width</p>
+				</section>
+
+				<section class="text-left" data-background="#FFF">
+					<h3>Box-Sizing</h3>
+					<hr>
+					<div class="text-center">
+						<img src="../img/class14/box-model-comparison.png" alt="">
+					</div>
+				</section>
+
+				<section class="center">
+					<h1>Exercise: Box-Sizing</h1>
+					<div class="text-left">
+						<p>1. Open <code>super-school-news/</code> in SublimeText</p>
+						<p>2. Edit <code>style.css</code> to build <code>layout.png</code></p>
+						<p>3. Only edit the <code>article</code> and <code>section</code> rules</p>
+						<p class="pad-left-lg">Note 1: gutters are 10px each</p>
+						<p class="pad-left-lg">Note 2: articles have 10px of padding</p>
+						<p class="pad-left-lg">Note 3: overall container width is 960px</p>
+						<p class="pad-left-lg">Note 4: remember <code>box-sizing: border-box;</code></p>
+					</div>
 				</section>
 
 				<!-- RESPONSIVE WEB DESIGN INTRO -->
 				<section class="center">
-					<h1>Responsive Web Design (RWD)</h1>
+					<h2>Responsive Web Design (RWD)</h2>
 					<img src="../img/class14/rwd-intro.jpg">
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Responsive Web Design</h2>
-
+					<h3>Responsive Web Design</h3>
+					<hr>
 					<p><u>Some Definitions:</u></p>
-					<p class="pad-left-lg">Designing for the optimal viewing experience agnostic of the device on which the site is being viewed</p>
+					<p class="pad-left-lg">Designing the optimal viewing experience agnostic of the device on which the site is being viewed</p>
 					<p>Or...</p>
 					<p class="pad-left-lg">Allows a site's layout to change as the screen size being used to view that site changes</p>
 					<p>Or...</p>
@@ -119,8 +188,8 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Responsive Web Design</h2>
-
+					<h3>Responsive Web Design</h3>
+					<hr>
 					<p>Why is RWD important?</p>
 					<p class="pad-left-lg fragment">1. Mobile</p>
 					<p class="pad-left-lg fragment">2. One site (codebase) for all screens</p>
@@ -129,19 +198,19 @@
 
 				<section class="center">
 					<h2>Open up...</h2>
-					<p><a href="GeneralAssemb.ly">GeneralAssemb.ly</a></p>
+					<h2><a target="_blank" href="http://GeneralAssemb.ly">GeneralAssemb.ly</a></h2>
 					<h2>What makes the site responsive?</h2>
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Responsive changes:</h2>
-
-					<p>1. Element (<code>&lt;div&gt;</code>) size</p>
-					<p>2. Layout changes</p>
-					<p>3. Navbar</p>
-					<p>3. Elements are hidden/shown</p>
-					<p>4. Image dimensions</p>
-					<p>5. Typography is changing size</p>
+					<h3>Responsive changes:</h3>
+					<hr>
+					<p class="fragment">1. Element (<code>&lt;div&gt;</code>) size - height/width</p>
+					<p class="fragment">2. Layout (content display)</p>
+					<p class="fragment">3. Navbar (icons visible)</p>
+					<p class="fragment">3. Elements are hidden/shown</p>
+					<p class="fragment">4. Image dimensions</p>
+					<p class="fragment">5. Typography is changing size</p>
 				</section>
 
 				<section class="center">
@@ -154,23 +223,25 @@
 
 				<!-- FLUID LAYOUT -->
 				<section class="center">
-					<h1>Fluid Layouts</h1>
+					<h1>Fluid Layout</h1>
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Fixed Layout</h2>
-
-					<p class="text-smaller">&#149; So far, our layouts have been <u>fixed</u> (eg 960px)</p>
-					<p class="text-smaller">&#149; Container (wrapper) element has a fixed width</p>
-					<p class="text-smaller">&#149; Content will render the same across screen sizes</p>
-					<div class="text-center">
-						<img src="../img/class14/fixed-layout.jpg">
+					<h3>Fixed Layout</h3>
+					<hr>
+					<div class="text-smaller">
+						<p>&#149; So far, our layouts have been <u>fixed</u> (eg 960px)</p>
+						<p>&#149; Container (wrapper) element has a fixed-width</p>
+						<p>&#149; Content will render the same across screen sizes</p>
+						<div class="text-center">
+							<img src="../img/class14/fixed-layout.jpg">
+						</div>
 					</div>
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Fluid Layout</h2>
-
+					<h3>Fluid Layout</h3>
+					<hr>
 					<p class="text-smallest">&#149; Fluid (aka liquid) layouts use %-based widths (eg <code>width: 75%</code>)</p>
 					<p class="text-smallest">&#149; Content will adapt to the screen size:</p>
 					<p class="pad-left-lg text-smallest">&#149; 75% of 960px => 720px</p>
@@ -186,15 +257,15 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Fluid Layout</h2>
-
+					<h3>Fluid Layout</h3>
+					<hr>
 					<p>&#149; First step towards RWD</p>
-					<p>&#149; Replace <u>fixed</u> widths with <u>fuild</u> widths</p>
+					<p>&#149; Replace <u>fixed</u> widths with <u>fluid</u> widths</p>
 					<p class="pad-left-lg">960px => 85% (or any other %-based value you like)</p>
 					<p>&#149; We can replace:</p>
-					<p class="pad-left-lg">Element widths</p>
-					<p class="pad-left-lg">Padding</p>
-					<p class="pad-left-lg">Margin</p>
+					<p class="pad-left-lg">&rArr; Element widths</p>
+					<p class="pad-left-lg">&rArr; Padding</p>
+					<p class="pad-left-lg">&rArr; Margin</p>
 					<p>&#149; We cannot set a % border-width</p>
 				</section>
 
@@ -214,16 +285,16 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Media Queries</h2>
-
+					<h3>Media Queries</h3>
+					<hr>
 					<p><u>A Definition</u>:</p>
 					<p>A media query consists of a media type and at least one expression that limits the style sheets' scope by using media features, such as width, height, and color. Media queries, added in CSS3, let the presentation of content be tailored to a specific range of output devices without having to change the content itself.</p>
 					<p class="text-right">- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">MDN</a></p>
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Media Queries</h2>
-
+					<h3>Media Queries</h3>
+					<hr>
 					<p><u>Another Definition</u>:</p>
 					<p>Media queries allow you to create CSS styles based on a variety of rules, like screen size.</p>
 					<div class="fragment">
@@ -234,8 +305,8 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Media Query Methods</h2>
-
+					<h3>Media Query Methods</h3>
+					<hr>
 					<p>1. Within CSS Stylesheet:</p>
 					<div class="text-smallest">
 <pre><code>
@@ -256,8 +327,8 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Browser-Width Media Queries</h2>
-
+					<h3>Browser-Width Media Queries</h3>
+					<hr>
 					<p>Within CSS Stylesheet:</p>
 <pre><code>
 	@media screen and (min-width: 1024px) {
@@ -272,8 +343,8 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Media Queries - Media Types</h2>
-
+					<h3>Media Queries - Media Types</h3>
+					<hr>
 					<p><u>all</u>: Suitable for all devices</p>
 					<p><u>handheld</u>: Intended for handheld devices</p>
 					<p><u>print</u>: Intended for paged material and for documents viewed on screen in print preview mode</p>
@@ -284,8 +355,8 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Media Queries - Media Rules</h2>
-
+					<h3>Media Queries - Media Rules</h3>
+					<hr>
 					<p><u>width</u>: viewport width</p>
 					<p><u>height</u>: viewport height</p>
 					<p><u>aspect-ratio</u>: width-to-height aspect ratio of the viewport</p>
@@ -294,16 +365,15 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Browser-Width Media Queries</h2>
-
-					<p>min-width: ___px</p>
+					<h3>Browser-Width Media Queries</h3>
+					<hr>
+					<p>&#149; min-width: ___px</p>
 					<p class="pad-left-lg">Targets widths greater than or equal to __px wide</p>
 <pre><code>
 	@media screen and (min-width: 1000px) { ... }
 
 </code></pre>
-					<hr>
-					<p>max-width: ___px</p>
+					<p>&#149; max-width: ___px</p>
 					<p class="pad-left-lg">Targets widths less than or equal to __px wide</p>
 <pre><code>
 	@media screen and (max-width: 1000px) { ... }
@@ -313,8 +383,8 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Media Queries - Additional Examples</h2>
-
+					<h3>Media Queries - Additional Examples</h3>
+					<hr>
 					<p>Don't have to specify a media type:</p>
 <pre><code>
 	@media (min-width: 700px) { ... }
@@ -339,8 +409,8 @@
 				</section>
 
 				<section class="text-left" data-background="#FFF">
-					<h2>Break Points</h2>
-
+					<h3>Break Points</h3>
+					<hr>
 					<p>There are a lot of <a href="https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints">break points</a></p>
 					<div class="fragment">
 						<p>A few recommendations:</p>
@@ -354,7 +424,7 @@
 
 				<section class="center">
 					<h1>Codealong</h1>
-					<p><a href="http://codepen.io/cheshireoctopus/pen/WrrvLj">CodePen Exercise</a></p>
+					<p><a target="_blank" href="http://codepen.io/cheshireoctopus/pen/WrrvLj?editors=1100">CodePen Exercise</a></p>
 				</section>
 
 				<section class="center">
